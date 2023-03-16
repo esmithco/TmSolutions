@@ -1,3 +1,5 @@
+USE TMSolution
+
 CREATE TABLE [tbWorkingDaysTypes] (
   [idWorkingDaysType] INT PRIMARY KEY IDENTITY(1, 1),
   [workingDaysType] VARCHAR(10) NOT NULL
@@ -30,7 +32,7 @@ GO
 
 CREATE TABLE [tbStationTypes] (
   [idStationType] INT PRIMARY KEY IDENTITY(1, 1),
-  [stationType] VARCHAR(10) NOT NULL
+  [stationType] VARCHAR(20) NOT NULL
 )
 GO
 
