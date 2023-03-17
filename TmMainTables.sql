@@ -8,7 +8,7 @@ GO
 
 CREATE TABLE [tbBusRoadTypes] (
   [idRoadType] INT PRIMARY KEY IDENTITY(1, 1),
-  [roadType] VARCHAR(10) NOT NULL
+  [roadType] VARCHAR(20) NOT NULL
 )
 GO
 
@@ -55,7 +55,7 @@ GO
 CREATE TABLE [tbBusType] (
   [idBusType] INT PRIMARY KEY IDENTITY(1, 1),
   [capacity] INT NOT NULL,
-  [idBusRoadType] INT NOT NULL,
+  [idRoadType] INT NOT NULL,
   [idFuelType] INT NOT NULL
 )
 GO
