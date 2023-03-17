@@ -143,7 +143,7 @@ CREATE TABLE [tbTrips] (
 
 GO
 
-ALTER TABLE [tbBusType] ADD FOREIGN KEY ([idBusRoadType]) REFERENCES [tbBusRoadTypes] ([idRoadType])
+ALTER TABLE [tbBusType] ADD FOREIGN KEY ([idRoadType]) REFERENCES [tbBusRoadTypes] ([idRoadType])
 GO
 
 ALTER TABLE [tbPassengers] ADD FOREIGN KEY ([idOcupation]) REFERENCES [tbOcupations] ([idOcupation])
